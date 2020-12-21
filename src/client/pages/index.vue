@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        client
+        Dental Project
       </h1>
       <div class="links">
         <a
