@@ -9,5 +9,20 @@ services:
       - "8000:8000"
     volumes: 
       - ./app:/app
+      - ./app/media:/app/media
+      - ./app/static:/app/static
     command: >     
       sh -c "python manage.py runserver 0.0.0.0:8000"
+
+  client:
+    build: 
+      context: ./src
+
+    ports:
+      - "80:3000"
+    volumes:
+      - ./src:/src
+    # command: 
+      # >
+      # sh -c "npm run build -p 83:8085"
+    command: ["npm", "run", "start"]
