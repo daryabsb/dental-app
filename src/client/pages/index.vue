@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex';
+import {mapGetters} from '/store/patient';
 export default {
   computed: {
     ...mapGetters(['getName'])

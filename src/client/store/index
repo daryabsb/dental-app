@@ -1,5 +1,6 @@
 // import axios from '@nuxtjs/axios';
 // import conf from './conf';
+import { person } from './patient'
 const state = () => ({});
 
 const mutations = {};
@@ -8,7 +9,7 @@ const actions = {};
 
 const getters = {};
 const modules = {
-    patient
+    person
 };
 
 export default {

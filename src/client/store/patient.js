@@ -1,3 +1,5 @@
+// import axios from '@nuxtjs/axios';
+// import conf from './conf';
 const state = () => ({
     name: 'Darya Ibrahim'
 });
@@ -18,3 +20,5 @@ export default {
     actions,
     getters
 };
+
+
