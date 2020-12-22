@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Dental Project
+        {{getName}}
       </h1>
       <div class="links">
         <a
@@ -28,7 +28,12 @@
 </template>
 
 <script>
-export default {}
+import {mapGetters} from 'vuex';
+export default {
+  computed: {
+    ...mapGetters(['getName'])
+  }
+}
 </script>
 
 <style>
